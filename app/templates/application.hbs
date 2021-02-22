@@ -1,5 +1,39 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<nav class="navbar navbar-light d-flex flex-row justify-content-start fixed-top">
+    <a class="navbar-brand">
+        <img src="" width="35" height="35" alt="Notes">
+    </a>
+    <div class="search-container nav-item">
+        <FaIcon @class="search-icon" @icon="search" />
+        <input class="search-bar ml-2 mt-lg-0" type="text" placeholder="Search" aria-label="Search">
+    </div>
+    <button type="button" class="btn btn-primary ml-auto">
+        <FaIcon @class="ml-auto" @icon="bell" />
+        <span class="badge badge-light">4</span>
+    </button>
+</nav>
+<div class="wrapper">
+    <div class="sidebar">
+                <SidebarTile
+                    @iconName="sticky-note"
+                    @menuItemName="Notes"
+                    @routeName="notes"/>
+                <SidebarTile
+                    @iconName="tags"
+                    @menuItemName="Tags"
+                    @routeName="notes"/>
+                <SidebarTile
+                    @iconName="archive"
+                    @menuItemName="Archives"
+                    @routeName="notes"/>
+                <SidebarTile
+                    @iconName="book-open"
+                    @menuItemName="Topics"
+                    @routeName="notes"/>
+                <SidebarTile
+                    @iconName="trash"
+                    @menuItemName="Bin"
+                    @routeName="notes"/>
 
+    </div>
+</div>
 {{outlet}}

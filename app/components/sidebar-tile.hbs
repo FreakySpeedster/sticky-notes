@@ -1,0 +1,6 @@
+{{#link-to @routeName tagName="div"}}<div  class="sidebar-menu-item" focus={{isActive}} tabIndex="1" onclick={{action "highlight"}}>
+    <FaIcon @class="ml-auto nav-item sidebar-icon" @icon="{{@iconName}}" @size=2x />
+    <h4 class="menu-item-name">{{@menuItemName}}</h4>
+</div>
+{{/link-to}}
+{{yield}}

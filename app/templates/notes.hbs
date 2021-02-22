@@ -1,0 +1,92 @@
+<div class="notes-group">
+    <div class="create-container">
+        <input class="title-note" placeholder="Title">
+        <textarea class="input-note" name="note" id="" cols="100" rows="4" placeholder="Type your note"></textarea>
+        <div class="create-footer">
+            <button type="button" class="btn btn-primary btn-sm">Save</button>
+            <button type="button" class="btn btn-secondary btn-sm">Cancel</button>
+        </div>
+    </div>
+    <div class="card-columns">
+        <NotesCard 
+            @topicName="Takeaways"
+            @title="FE team meeting"
+            @tags="Good First Bugs"
+            @notesContent="Do you want to become available and receive tickets through Auto-Assignment? If so ping me on my email"
+            />
+        <NotesCard 
+            @topicName="Reminders"
+            @title="Tomorrow's Tasks"
+            @tags="Good First Bugs"
+            @notesContent="Do you want to become"
+            />
+        <NotesCard 
+            @topicName="MFA FE side fix"
+            @title="PR comments > 456712"
+            @tags="Learnings"
+            @notesContent="Do you want to become available and"
+            />
+        <NotesCard 
+            @topicName="All time"
+            @title="Projects worked on"
+            @tags="Learnings"
+            @notesContent="Custom Field Reports
+                            Ticket import API V2
+                            Asset Custom Fields
+                            Knowledge Base V2
+                            Agent Script
+                            KB & Ticket Ngram Search improvements 
+                            Slack Integration
+                            Support Center V2"
+            />
+        <NotesCard 
+            @topicName="Takeaways"
+            @title="FE team meeting"
+            @tags="Learnings"
+            @notesContent="Do you want to become available and receive tickets through Auto-Assignment? If so ping me on my email"
+            />
+        <NotesCard 
+            @topicName="Reminders"
+            @title="Tomorrow's Tasks"
+            @tags="Task to finish"
+            @notesContent="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            />
+        <NotesCard 
+            @topicName="Takeaways"
+            @title="FE team meeting"
+            @tags="Backlog"
+            @notesContent="Do you want to become available and receive tickets through Auto-Assignment? If so ping me on my email"
+            />
+        <NotesCard 
+            @topicName="Reminders"
+            @tags="Learnings"
+            @title="Tomorrow's Tasks"
+            @notesContent="Do you want to become"
+            />
+        <NotesCard 
+            @topicName="Takeaways"
+            @title="FE team meeting"
+            @tags="Learnings"
+            @notesContent="Do you want to become available and receive tickets through Auto-Assignment? If so ping me on my email"
+            />
+        <NotesCard 
+            @topicName="Reminders"
+            @title="Tomorrow's Tasks"
+            @tags="Task to finish"
+            @notesContent="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            />
+        <NotesCard 
+            @topicName="Takeaways"
+            @title="FE team meeting"
+            @tags="Backlog"
+            @notesContent="Do you want to become available and receive tickets through Auto-Assignment? If so ping me on my email"
+            />
+        <NotesCard 
+            @topicName="Reminders"
+            @tags="Learnings"
+            @title="Tomorrow's Tasks"
+            @notesContent="Do you want to become"
+            />
+    </div>
+</div>
+{{outlet}}

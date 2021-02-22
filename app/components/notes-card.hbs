@@ -1,0 +1,14 @@
+<div class="card text-white bg-secondary">
+  <div class="card-header">{{@topicName}}</div>
+  <div class="card-body">
+    <h5 class="card-title">{{@title}}</h5>
+    <p class="card-text">{{@notesContent}}</p>
+    <span class="badge badge-pill badge-light">{{@tags}}</span>
+    <div class="note-ops">
+        <FaIcon @class="op-icon" @icon="thumbtack"/>
+        <FaIcon @class="op-icon" @icon="tag"/>
+        <FaIcon @class="op-icon" @icon="palette" />
+        <FaIcon @class="op-icon" @icon="share-alt" />
+    </div>
+  </div>
+</div>
